@@ -1,0 +1,7 @@
+{
+    "name": "Jupyter Dev Environment",
+    "build": {
+        "dockerfile": "Containerfile"
+    },
+    "postCreateCommand": "conda install --file requirements.txt"
+}
