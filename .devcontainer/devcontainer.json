@@ -3,5 +3,13 @@
     "build": {
         "dockerfile": "Containerfile"
     },
-    "postCreateCommand": "conda install --file requirements.txt"
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python"
+            ]
+        }
+    },
+    "postStartCommand": "pip install -r requirements.txt"
 }
