@@ -1,6 +1,7 @@
 torch
 torchvision
-matplotlib
+matplotlib-base
+matplotlib-inline
 pillow
 scikit-learn
 seaborn
