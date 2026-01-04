@@ -1,8 +1,10 @@
 {
     "name": "Jupyter Dev Environment",
-    "build": {
-        "dockerfile": "Containerfile"
-    },
+    "image": "quay.io/jupyter/pytorch-notebook:cuda12-python-3.13.11",
+    "runArgs": [
+        // "--gpus",
+        // "all"
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
@@ -11,5 +13,5 @@
             ]
         }
     },
-    "postStartCommand": "pip install -r requirements.txt"
+    "postStartCommand": "mamba install -f ./requirements.txt"
 }
