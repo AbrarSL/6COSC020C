@@ -2,8 +2,8 @@
     "name": "Jupyter Dev Environment",
     "image": "quay.io/jupyter/pytorch-notebook:cuda12-python-3.13.11",
     "runArgs": [
-        // "--gpus",
-        // "all"
+        "--gpus",
+        "all"
     ],
     "customizations": {
         "vscode": {
